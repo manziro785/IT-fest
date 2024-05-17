@@ -4,6 +4,6 @@ import MainPage from "../pages/mainPage/mainPage.jsx";
 export const routers = createBrowserRouter([
     {
         path: '/',
-        element: <MainPage />
+        element: <MainPage /> 
     }
 ]);
