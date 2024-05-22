@@ -1,18 +1,18 @@
 import React from 'react'
-import './sponsorsModule.css'
+import './sponsorModule.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios';
 
 
 export default function Sponsors() {
-  const [partner, setPartner] = useState([]);
+  const [sponsor, setSponsor] = useState([]);
 
 
     async function getData() {
       try {
-        const res = await axios.get('http://217.151.230.35:199/api/info/partner/'); 
+        const res = await axios.get('http://217.151.230.35:199/api/info/sponsor/'); 
         console.log(res.data);
-        setPartner(res.data);
+        setSponsor(res.data);
       } catch (error) {
         console.error('Ошибка при выполнении GET-запроса:', error.message);
         
@@ -25,20 +25,19 @@ export default function Sponsors() {
   return (
     <>
     <div className="title-partners">
-        Партнеры
+        Спонсоры
       </div>
-    <div className="partner-container">
+    <div className="sponsor-container">
       
-      {partner.map((partner) => (  
-        <div key={partner.id} className="partner">
-          {partner.photo && (
+      {sponsor.map((sponsor) => (  
+        <div key={sponsor.id} className="sponsor">
+          {sponsor.photo && (
             <>
-            <a href={partner.url} target="_blank" rel="noopener noreferrer">
-            <img src={partner.photo} alt={partner.name} />
+            <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+            <img src={sponsor.photo} alt={sponsor.name} className='sponsor-img'/>
             </a>
             </>            
           )}
-          <h2>{partner.name}</h2>
 
         </div>
       ))}
