@@ -1,12 +1,13 @@
 import React from 'react';
-import Sponsors from '../../components/sponsors/sponsors';
+import Partner from '../../components/partner/partner';
+import Sponsors from '../../components/sponsors/sponsor';
 
 const MainPage = () => {
     return (
         <>
              main page
-
-             <Sponsors/>
+<Sponsors/>
+             <Partner/>
         </>
     );
 };

@@ -1,0 +1,12 @@
+.sponsor-img {
+    width: 70%;
+}
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.sponsor {
+    width: fit-content;
+    height: fit-content;
+}
