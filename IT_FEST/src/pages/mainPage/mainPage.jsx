@@ -1,13 +1,10 @@
 import React from 'react';
-import Sponsors from '../../components/sponsors/sponsors';
 
 const MainPage = () => {
     return (
-        <>
-             main page
-
-             <Sponsors/>
-        </>
+        <div style={{padding:'0' , margin:'0'}}>
+            typo main
+        </div>
     );
 };
 
