@@ -1,10 +1,13 @@
 import React from 'react';
+import Sponsors from '../../components/sponsors/sponsors';
 
 const MainPage = () => {
     return (
-        <div >
+        <>
              main page
-        </div>
+
+             <Sponsors/>
+        </>
     );
 };
 
