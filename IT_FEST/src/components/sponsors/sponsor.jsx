@@ -33,7 +33,7 @@ export default function Sponsors() {
         <div key={sponsor.id} className="sponsor">
           {sponsor.photo && (
             <>
-            <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+            <a href={sponsor.url} target="_blank" rel="noopener noreferrer" >
             <img src={sponsor.photo} alt={sponsor.name} className='sponsor-img'/>
             </a>
             </>            
