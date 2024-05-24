@@ -36,12 +36,12 @@ body{
     color: black;
 }
 .wrapper{
-    width: 1920px;
+    /* width: 1920px;
 height: 50px;
 top: -2063px;
 left: 18480px;
 gap: 0px;
-opacity: 0px;
+opacity: 0px; */
 
 }
 
@@ -55,6 +55,7 @@ opacity: 0px;
     background-color: #0000008c;
     display: flex;
     justify-content: space-between;
+   
     align-items:center
 }
 .header-logo img {
@@ -233,8 +234,8 @@ top: 480px;
     display: flex;
     justify-content: center;
     align-items:center;
-    height: 100vh;
-    margin-top: -64px;
+    /* height: 100vh; */
+    /* margin-top: -64px; */
 
 }
 .word-it-banner {
@@ -336,4 +337,8 @@ top: 480px;
     display: flex;
     justify-content: center;
     margin-top: 34px;
+}
+
+.wrappper-main {
+    /* height: 40vh; */
 }

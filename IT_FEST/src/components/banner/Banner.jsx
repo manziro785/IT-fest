@@ -5,8 +5,9 @@ import './reset.css'
 export default function Banner() {
   return (
     <>
+    <div className="wrappper-main">
     <header className="header">
-                <div className="wrapper">
+                <div className="wrappper">
                     <div className="header-wrapper">
                         <div className="header-logo">
                             <a href="/" className="header-logo-link">
@@ -143,7 +144,7 @@ export default function Banner() {
                 </div>
               </div>
             </div>
-        
+            </div>
     </>
   )
 }
