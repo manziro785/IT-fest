@@ -32,12 +32,12 @@ export default function Partner() {
       {partner.map((partner) => (  
         <div key={partner.id} className="partner">
           {partner.photo && (
-            <>
+            <> 
             <a href={partner.url} target="_blank" rel="noopener noreferrer">
             <img src={partner.photo} alt={partner.name} />
             </a>
             </>            
-          )}
+          )} 
           <h2>{partner.name}</h2>
 
         </div>
