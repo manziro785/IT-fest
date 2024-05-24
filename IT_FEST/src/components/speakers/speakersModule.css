@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#652B98, #C7168F, #C7168F, #EB4724, #F49A0E);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.speakers {
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.speaker-card {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.speaker-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.speaker-card img {
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
+    object-fit: cover; /* Ensure the image covers the entire area without stretching */
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.speakers-desc {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
