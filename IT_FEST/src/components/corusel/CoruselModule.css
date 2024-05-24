@@ -1,0 +1,140 @@
+.it-word {
+    font-size: 600px;
+    font-weight: 700;
+    display: flex;
+    background: none;
+    z-index: 2;
+    transition: transform 0.5s ease;
+    position: relative;
+  }
+  
+  .btn-i, .btn-t {
+    background: linear-gradient(to bottom, #FFCE4F, #D60034);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .btn-i {
+    z-index: 4;
+    position: relative;
+  }
+  .btn-t {
+    z-index: -1;
+    position: relative;
+  }
+
+  
+  .text-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .sybtitle-corusel {
+    font-size: 100px;
+    font-weight: 800;
+    margin-top: -160px;
+    margin-left: 42px;
+    background: linear-gradient(to bottom, #FFCE4F, #E40F12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+  
+  .container-corusel {
+    display: flex;
+    -webkit-background-clip: text;
+    position: relative;
+  }
+  
+  .uptitle-info {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .subtitle-info {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .title-corusel {
+    /* transition: transform 0.5s ease; */
+  }
+  
+  .text-info {
+    width: 620px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 80px;
+    flex-direction: column;
+    overflow: visible;
+    font-size: 1.5em;
+    white-space: nowrap;
+    /* transition: transform 0.5s ease; */
+    position: absolute;
+    
+  }
+  
+  .imgs-box {
+    /* width: 620px;
+    height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: transform 0.5s ease; */
+    position: absolute;
+    left: 800px;
+  }
+  
+  .img-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .slider-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gusen::-webkit-slider-runnable-track {
+    background-color: #FFB13C;
+    border-radius: 40px;
+    padding: 0px 10px;
+    min-width: 230px;
+    height: 16px;
+  }
+  
+  .gusen {
+    -moz-appearance: none;
+    transform: rotate(180deg);
+    min-width: 230px;
+    caret-color: white;
+  }
+  
+  .gusen::-webkit-slider-thumb, .gusen::-ms-thumb {
+    -webkit-appearance: none;
+    width: 54px;
+    height: 15px;
+    cursor: pointer;
+    appearance: none;
+    background-color: white;
+  }
+  
+  .gusen:focus {
+    width: 54px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #FFFF;
+  }
+
+
+  

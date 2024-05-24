@@ -1,4 +1,16 @@
-.body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
     margin: 0;
     padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, #652B98, #C7168F, #C7168F, #EB4724, #F49A0E);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
 }
