@@ -3,7 +3,6 @@ import './CoruselModule.css';
 
 export default function Corusel() {
   const [offset, setOffset] = useState(0);
-  
 
   const handleSliderChange = (event) => {
     const sliderValue = parseInt(event.target.value, 10);
