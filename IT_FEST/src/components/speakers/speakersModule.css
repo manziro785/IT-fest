@@ -1,3 +1,4 @@
+/* Existing styles */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
@@ -20,34 +21,33 @@ body {
 }
 
 .speakers {
-
     text-align: center;
     color: white;
     padding: 20px;
     border-radius: 15px;
+    max-width: 1200px; /* Ensure the content doesn't stretch too wide */
+    margin: 0 auto; /* Center align */
 }
 
 .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
     gap: 20px;
     padding: 20px;
 }
 
 .speaker-card {
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+
 }
 
 .speaker-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 .speaker-card img {
-    width: 200px; /* Increased width */
-    height: 200px; /* Increased height */
-    object-fit: cover; /* Ensure the image covers the entire area without stretching */
+    max-width: 100%; /* Ensure the image stays within its container */
+    height: auto; /* Preserve aspect ratio */
     display: block;
     margin: 0 auto 10px;
 }
@@ -55,4 +55,22 @@ body {
 .speakers-desc {
     margin-bottom: 20px;
     font-weight: 400;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .speakers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+}
+
+/* Single column layout for small screens */
+@media screen and (max-width: 427px), screen and (max-width: 375px), screen and (max-width: 320px) {
+    .speakers-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+    }
 }

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.festival-sections {
+    max-width: 100%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-overlay {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    padding: 20px;
+}
+.section:hover{
+    border: 6px solid #001245;
+
+}
+
+.section-overlay h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.section-overlay p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.section-overlay button {
+    background: none;
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    color: #FF862E;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.section-overlay button:hover {
+    color: #EB4724;
+    text-decoration: underline;
+}
+
+.section-overlay button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #EB4724;
+    left: 0;
+    bottom: -2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.section-overlay button:hover::after {
+    transform: scaleX(1);
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .section-overlay {
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .section-overlay h2 {
+        font-size: 1.8em;
+    }
+
+    .section-overlay p {
+        font-size: 1em;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .section-overlay {
+        width: 100%;
+        padding: 15px;
+        height: auto;
+    }
+
+    .section-overlay h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .section-overlay p {
+        font-size: 0.9em;
+    }
+
+    .section-overlay button {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 425px) {
+    .title {
+        font-size: 1.4em;
+    }
+
+    .section-overlay {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .section-overlay h2 {
+        font-size: 3em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .section-overlay p {
+        font-size: 1.5em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .section-overlay button {
+        margin: auto;
+        font-size: 1.5em;
+        width: auto;
+    }@media (max-width: 489px){
+        .section-overlay p{
+            display: none;
+        }
+    }
+    }@media (max-width: 430px) {
+    .title {
+        font-size: 1.2em;
+    }
+
+    .section-overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-overlay h2 {
+        font-size: 0.8em;
+    }
+
+    .section-overlay p {
+        font-size: 0.3em;
+        display: none;
+
+    }
+
+    .section-overlay button {
+        font-size: 0.8em;
+        cursor: pointer;
+
+        text-align: center;
+
+    }
+}
+@media (max-width: 375px) {
+    .title {
+        font-size: 1em;
+    }
+
+    .section-overlay {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-overlay h2 {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    .section-overlay p {
+        font-size: 0.8em;
+        margin-bottom: 8px;
+    }
+
+    .section-overlay button {
+        font-size: 0.9em;
+        padding: 6px;
+        width: auto;
+        margin-bottom: 0;
+    }
+}
+
+/* Extra extra extra small phones */
+@media (max-width: 320px) {
+    .title {
+        font-size: 0.9em;
+    }
+
+    .section-overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-overlay h2 {
+        font-size: 0.9em;
+        margin-bottom: 8px;
+    }
+
+    .section-overlay p {
+        font-size: 0.7em;
+        display: none;
+    }
+
+    .section-overlay button {
+        font-size: 1.0em;
+        margin: 5px;
+    }
+}

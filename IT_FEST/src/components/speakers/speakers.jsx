@@ -32,10 +32,10 @@ const Speakers = () => {
 
     return (
         <div className='speakers'>
-            <div className="container d-flex justify-content-center sm:flex-row mb-10">
-                <h1 className="text-center text-4xl xl:text-5xl font-bold mb-10 sm:mb-0" id="festival-sections">
-                    <span >Опытные специалиасты</span>
-                                  <span>приглашённые на фестиваль</span>
+            <div className="container">
+                <h1 className="text-center" id="festival-sections">
+                    Опытные специалиасты
+                    приглашённые на фестиваль
                 </h1>
             </div>
             <div className="speakers-grid">

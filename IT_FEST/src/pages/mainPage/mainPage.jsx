@@ -1,19 +1,15 @@
 import React from 'react';
-import Partner from '../../components/partner/partner';
 import Sponsors from '../../components/sponsors/sponsors';
-import Corusel from '../../components/corusel/Corusel';
-import Banner from '../../components/banner/Banner';
-import CustomCarousel from '../../components/Scroller/scroller';
+import Section from "../../components/section/Section.jsx";
+import Speakers from "../../components/speakers/speakers.jsx";
 
 const MainPage = () => {
     return (
         <>
-             main page
-             <Banner/>
-        <Corusel/> 
-        <CustomCarousel/>
-<Sponsors/>
-             <Partner/>
+            <Speakers/>
+            <Sponsors/>
+            <Section/>
+
         </>
     );
 };
